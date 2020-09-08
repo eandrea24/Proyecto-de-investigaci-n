@@ -26,9 +26,6 @@
          eandrea.sanchez@udea.edu.co
          
         32.256.416
-        
-       
-            
         \vfill
             
         \vspace{0.8cm}
@@ -37,7 +34,7 @@
         Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
         Universidad de Antioquia\\
         Medellín\\
-        Septiembre de 2020
+         2020-1
             
     \end{center}
 \end{titlepage}
@@ -45,59 +42,80 @@
 \tableofcontents
 \newpage
 \section{Introducción}\label{intro}
+\vspace{0.5cm}
+\noindent
 En este documento se recopilaran los tres trabajos de los que esta compuesto el proyecto de investigación de la materia. 
-
+\vspace{0.5cm}
+\noindent
 Inicialmente se realizara el taller de memoria, donde se resolverán las preguntas planteadas en el documento suministrado por el docente. Este mismo también es la fuente para resolverlo. Luego se realizaran los dos trabajos faltantes; interrupciones e hilos.
+\noindent
+\vspace{0.5cm}
+A medida que se avance en el proyecto de investigación se ampliara este documento y sus partes comunes: introducción, índice, referencias y se agregaran las que se consideren pertinentes.
+\noindent
+\vspace{0.5cm}
+Se da inicio a este primer trabajo, explicando que es la memoria del computador, luego se nombraran las memorias reconocidas por el estudiante y se hará una pequeña descripción de ellas. Después se explicara como el computador gestiona la memoria y se terminara con una explicación de que es lo que hace que una memoria sea mas rápida que otra y por qué eso es importante. 
 
-A medida que se avance en el proyecto de investigación se ampliara este documento y sus partes comunes: introducción, índice, referencias y se agregaran las que se considere pertinente.
 
 \newpage
-Vamos a citar por ejemplo un artículo de \textbf{Albert Einstein} \cite{einstein}.
-También es posible citar libros \cite{dirac} o documentos en línea \cite{knuthwebsite}.
+ 
+
 \section{Taller de Memoria.} \label{contenido}
 
 \subsection{Defina que es la memoria del computador.}
+\vspace{0.5cm}
+\noindent
 La memoria del computador, es una serie de dispositivos de almacenamiento, que varían en velocidades, capacidades, costos y tecnologías; que usadas en conjunto con el microprocesador permiten el funcionamiento óptimo de un computador. 
 
+\vspace{0.5cm}
+\noindent
 Dichas tareas inician con el encendido del computador, pasando por el reconocimiento de los diferentes dispositivos de almacenamiento y el reconocimiento del sistema operativo.
 
+\vspace{0.5cm}
+\noindent
 Luego de esto las diferentes memorias funcionaran de acuerdo a las jerarquías y a los requerimientos hechos por el usuario y la frecuencia con la que se usen los diferentes archivos. 
-
-
-Revisar en la última sección el formato de las referencias en IEEE.
 
 \subsection{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.}
 \begin{itemize}
-    \item     Memoria RAM:
-    \item     Memoria FLASH:
-    \item     Memoria ROM:
-    \item     Memoria VIRTUAL:
-    \item     DISCO DURO:
+    \item     Memoria RAM: La memoria RAM es la memoria principal de un dispositivo donde se almacena programas y datos informativos. Las siglas RAM significan “Random Access Memory” traducido al español es “Memoria de Acceso Aleatorio”\cite{RAM}.
+
+La memoria RAM es conocida como memoria volátil lo cual quiere decir que los datos no se guardan de manera permanente, es por ello, que cuando deja de existir una fuente de energía en el dispositivo la información se pierde. Asimismo, la memoria RAM puede ser reescrita y leída constantemente.
+    \item     Memoria FLASH: la memoria flash es una evolución de una tecnología un poco más antigua, las memorias de tipo EEPROM (Electrically Erasable Programmable Read-Only Memory), lo que en español significa “Memoria de solo lectura programable y borrable eléctricamente”. Esto significa que el chip podía programarse, reprogramarse y borrarse electrónicamente. El problema más importante de las EEPROM es que sólo se podía almacenar o leer datos sobre una sola celda de memoria a la vez.
+    
+    \vspace{0.5cm}
+    \noindent
+    Al ser un dispositivo derivado de esta tecnología, las memorias flash, también pueden programarse, es decir grabar datos en ellas, borrarlos y volver a almacenar otros datos. La diferencia más importante entre las dos tecnologías, la EEPROM y las memorias flash es que las segundas pueden realizar todos los procedimientos de lectura y escritura mucho más rápido que la primera, debido a su capacidad de almacenar y leer datos de forma simultánea en múltiples celdas de memoria a la vez.\cite{flash}
+    \item     Memoria ROM: 
+memoria-romUna memoria ROM es aquella memoria de almacenamiento que permite sólo la lectura de la información y no su destrucción, independientemente de la presencia o no de una fuente de energía que la alimente.
+
+\vspace{0.5cm}
+\noindent
+ROM es una sigla en inglés que refiere al término "Read Only Memory" o "Memoria de Sólo Lectura". Se trata de una memoria de semiconductor que facilita la conservación de información que puede ser leída pero sobre la cual no se puede destruir. A diferencia de una memoria RAM, aquellos datos contenidos en una ROM no son destruidos ni perdidos en caso de que se interrumpa la corriente de información y por eso se la llama "memoria no volátil"\cite{ROM}.
+    \item     Memoria VIRTUAL: Memoria Virtual es el uso combinado de memoria RAM en su computadora y espacio temporero en el disco duro. Cuando la memoria RAM es baja, la memoria virtual mueve datos desde la memoria RAM a un espacio llamado archivo de paginación. El movimiento de datos desde y hacia los archivos de paginación crea espacio en la memoria RAM para completar su tarea \cite{virtual}.
 \end{itemize}
 
 \subsection{Describa la manera como se gestiona la memoria en un computador.}
 
-\subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+\vspace{0.5cm}
+\noindent
+El procesador toma del disco duro los archivos que el usuario va a trabajar y los pone en una parte especifica de la memoria, luego separa el primer archivo que va utilizar, hace lo que requiere y lo pone en otra parte de la memoria. Hace lo mismo con cada uno de los siguientes archivos y cuando termina de procesar todos los archivos los vuelve a guardar en el disco duro para conservar las modificaciones.
+
+\vspace{0.5cm}
+\noindent
+El microprocesador toma los datos e instrucciones de la memoria RAM, los procesa y devuelve los resultados ya procesados escribiéndolos en la memoria en un ciclo continuo. Esta ida y vuelta de datos entre el microprocesador y la memoria ocurre millones de veces por segundo. Una vez que se cierra una aplicación, ella y los archivos que funcionan bajo la misma (por ejemplo un editor de imágenes y las imágenes editadas) se quitan instantáneamente de la memoria, para dar espacio a otros datos. Si los archivos con los que se trabajó no se guardan en un dispositivo de almacenamiento permanente (como por ejemplo un disco duro) se pierden para siempre\cite{taller}.
+
+\subsection{¿Qué hace que una memoria sea más rápida que otra?
+¿Por qué esto es importante?}
+
+\vspace{0.5cm}
+\noindent
+Lo que hace a una memoria mas rápida que otra es la velocidad del bus de datos, la cantidad de bits (pulsos eléctricos) que se transfieren a la vez en ese bus y la latencia.
+
+\vspace{0.5cm}
+\noindent
+Esto es importante porque a partir de la memoria y sus jerarquías que tiene mucho que ver con la velocidad de funcionamiento se da el correcto funcionamiento del sistema
+
 \newpage
 \section{Interrupciones} \label{contenido}
 \newpage
 \section{Hilos} \label{contenido}
-\newpage
-\section{Inclusión de imágenes} \label{imagenes}
-
-
-En la Figura (\ref{fig:cpplogo}), se presenta el logo de C++ contenido en la carpeta images.
-
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
-
-Las secciones (\ref{intro}), (\ref{contenido}) y (\ref{imagenes}) dependen del estilo del documento.
-
-\bibliographystyle{IEEEtran}
-\bibliography{references}
-
 \end{document}
